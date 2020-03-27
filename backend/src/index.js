@@ -4,11 +4,10 @@ const cors = require('cors')
 
 app = express();
 
+/** Will configure what clients can access our backend */
+app.use(cors());
 /** Before routing requests to methods, transform the payload into JSON */
 app.use(express.json());
 app.use(routes);
-
-/** Will configure what clients can access our backend */
-app.use(cors());
 
 app.listen(3333);

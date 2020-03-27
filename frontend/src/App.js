@@ -1,26 +1,41 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+//import Logon from './pages/Logon'  // when we import a folder, it looks for the index.js in there
+import './global.css'
 
-function App() {
+import Routes from './routes'
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello OmniStack
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Routes/>
+  )
 }
 
-export default App;
+
+
+// import React, { useState } from 'react';
+// // JSX - JavaScript + XML
+// // A React component is a function that return HTML
+// // React properties are similar to HTML attributes in sintax
+// // Components can keep State - user input, info from external APIs
+
+// function App() {
+//   // always use useState to keep state within a component
+//   // useState returns an array with two positions
+//   // [0] value
+//   // [1] update function
+//   // let's deconstruct the array into variables for each position
+//   const [counter, setCounter] = useState(0);
+
+//   function increment() {
+//     setCounter(counter + 1);
+//   }
+
+//   return (
+//     <div>
+//       <Header>Counter: {counter}</Header>
+//       <button onClick={increment}>Increment</button>
+//     </div>
+//   );
+// }
+
+// export default App;
