@@ -11,7 +11,6 @@ export default function App() {
 }
 
 
-
 // import React, { useState } from 'react';
 // // JSX - JavaScript + XML
 // // A React component is a function that return HTML
